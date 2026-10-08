@@ -1,10 +1,10 @@
 import { type OPdtoTypes } from "../dto/OPdtoTypes";
 
-interface ArcCardProps {
+interface OPArcCardProps {
   arc: OPdtoTypes;
 }
 
-export default function ArcCard({ arc }: ArcCardProps) {
+export default function OPArcCard({ arc }: OPArcCardProps) {
   return (
     <div className="bg-slate-800/80 border border-slate-700/60 rounded-xl p-5 hover:border-amber-400/50 transition shadow-md flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
       <div className="space-y-1.5 flex-1">

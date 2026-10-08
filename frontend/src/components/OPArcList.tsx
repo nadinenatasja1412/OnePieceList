@@ -1,12 +1,12 @@
 import { type OPdtoTypes } from "../dto/OPdtoTypes";
 import ArcCard from "./OPArcCard";
 
-interface ArcListProps {
+interface OPArcListProps {
   arcs: OPdtoTypes[];
   onReset: () => void;
 }
 
-export default function ArcList({ arcs, onReset }: ArcListProps) {
+export default function OPArcList({ arcs, onReset }: OPArcListProps) {
   if (arcs.length === 0) {
     return (
       <div className="text-center py-16 bg-slate-800/40 border border-dashed border-slate-700 rounded-xl">

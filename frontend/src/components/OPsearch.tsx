@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { OPdata } from "../data/OPdata";
 import SearchInput from "./OPsearchInput";
-import SagaFilter from "./OPfilter";
+import SagaFilter from "./OPSagaFilter";
 import ArcList from "./OPArcList";
 import { type OPdtoTypes } from "../dto/OPdtoTypes";
 
-export default function OnePieceSearch() {
+export default function OPSearch() {
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [selectedSaga, setSelectedSaga] = useState<string>("All");
 

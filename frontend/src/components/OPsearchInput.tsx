@@ -3,7 +3,7 @@ interface SearchInputProps {
   onSearchChange: (value: string) => void;
 }
 
-export default function SearchInput({ searchTerm, onSearchChange }: SearchInputProps) {
+export default function OPsearchInput({ searchTerm, onSearchChange }: SearchInputProps) {
   return (
     <div className="relative flex-1">
       <input

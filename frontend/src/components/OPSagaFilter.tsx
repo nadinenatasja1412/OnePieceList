@@ -4,7 +4,7 @@ interface SagaFilterProps {
   onSagaChange: (saga: string) => void;
 }
 
-export default function SagaFilter({ sagas, selectedSaga, onSagaChange }: SagaFilterProps) {
+export default function OPSagaFilter({ sagas, selectedSaga, onSagaChange }: SagaFilterProps) {
   return (
     <div className="md:w-72">
       <select
