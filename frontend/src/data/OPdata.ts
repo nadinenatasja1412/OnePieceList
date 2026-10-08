@@ -54,5 +54,33 @@ export const OPdata: OPdtoTypes[] = [
     {id: 39, saga: "Rookie Saga", arcName: "Toriko Crossover Arc", epsRange: "492", totalEps: 1, description: "A crossover episode featuring characters from the series Toriko.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Toriko_Crossover_Arc.png"},
 
     //The New World Saga
+    //Fishman Island
+    {id: 40, saga: "The New World Saga", arcName: "Return to Sabaody Arc", epsRange: "517-522", totalEps: 6, description: "The crew returns to the Sabaody Archipelago after two years of training, where they reunite and face new challenges.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Return_to_Sabaody_Arc.png"},
+    {id: 41, saga: "The New World Saga", arcName: "Fishman Island Arc", epsRange: "523-541, 543-574`", totalEps: 58, description: "The crew arrives at Fishman Island, where they confront the New Fishman Pirates and learn about the history of the island.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Fishman_Island_Arc.png"},
+    {id: 42, saga: "The New World Saga", arcName: "Toriko Crossover Arc", epsRange: "542", totalEps: 4, description: "A special arc focusing on the ambitions of the legendary pirate Z.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Zs_Ambition_Arc.png"},
+    
+    //Dressrosa
+    {id: 43, saga: "The New World Saga", arcName: "Z's Ambition Arc", epsRange: "575-578", totalEps: 4, description: "A special arc focusing on the ambitions of the legendary pirate Z.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Zs_Ambition_Arc.png"},
+    {id: 44, saga: "The New World Saga", arcName: "Punk Hazard Arc", epsRange: "579-625", totalEps: 47, description: "The crew arrives at Punk Hazard, an island with extreme climates, where they confront the mad scientist Caesar Clown.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Punk_Hazard_Arc.png"},
+    {id: 45, saga: "The New World Saga", arcName: "Toriko & Dragon Ball Crossover Arc", epsRange: "590", totalEps: 1, description: "A crossover episode featuring characters from the series Toriko and Dragon Ball.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Toriko_Dragon_Ball_Crossover_Arc.png"},
+    {id: 46, saga: "The New World Saga", arcName: "Caesar Retrieval Arc", epsRange: "626-628", totalEps: 3, description: "The crew attempts to retrieve the mad scientist Caesar Clown from the clutches of the World Government.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Caesar_Retrieval_Arc.png"},
+    {id: 47, saga: "The New World Saga", arcName: "Dressrosa Arc", epsRange: "629-746", totalEps: 118, description: "The crew arrives at Dressrosa, where they confront the warlord Donquixote Doflamingo and his crew.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Dressrosa_Arc.png"},
 
-]
+    //Whole Cake Island
+    {id: 48, saga: "The New World Saga", arcName: "Silver Mine Arc", epsRange: "747-750", totalEps: 4, description: "The crew visits the Silver Mine, where they encounter new challenges and adventures.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Silver_Mine_Arc.png"},
+    {id: 49, saga: "The New World Saga", arcName: "Zou Arc", epsRange: "751-779", totalEps: 29, description: "The crew arrives at Zou, an island on the back of a giant elephant, where they learn about the history of the Mink Tribe.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Zou_Arc.png"},
+    {id: 50, saga: "The New World Saga", arcName: "Marine Rookie Arc", epsRange: "780-782", totalEps: 3, description: "The crew faces off against the Marines in a series of intense battles.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Marine_Rookie_Arc.png"},
+    {id: 51, saga: "The New World Saga", arcName: "Whole Cake Island Arc", epsRange: "783-877", totalEps: 95, description: "The crew infiltrates Whole Cake Island to rescue their crewmate Sanji from the clutches of the Big Mom Pirates.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Whole_Cake_Island_Arc.png"},
+    {id: 52, saga: "The New World Saga", arcName: "Reverie/ Levely Arc", epsRange: "878-889", totalEps: 12, description: "The world leaders gather at the Reverie to discuss important matters, while the crew faces new challenges.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Reverie_Arc.png"},
+    
+    //Wano Country
+    {id: 53, saga: "The New World Saga", arcName: "Wano Country Arc", epsRange: "890-894, 897-906, 908-1028, 1031-1085", totalEps: 196, description: "The crew arrives at Wano Country, a nation ruled by the shogun Orochi and the Emperor Kaido, where they join forces with the samurai to overthrow the tyrants.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Wano_Country_Arc.png"},
+    {id: 54, saga: "The New World Saga", arcName: "Cidre Guild Arc", epsRange: "895-896", totalEps: 2, description: "The crew encounters the Cidre Guild, a group of powerful warriors.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Cidre_Guild_Arc.png"},
+    {id: 55, saga: "The New World Saga", arcName: "Romance Dawn Special Arc", epsRange: "907", totalEps: 1, description: "A special episode revisiting the origins of Monkey D. Luffy and his dream of becoming the Pirate King.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Romance_Dawn_Special_Arc.png"},
+    {id: 56, saga: "The New World Saga", arcName: "Uta's Past Arc", epsRange: "1029-1030", totalEps: 2, description: "A special arc focusing on the past of Uta, a mysterious character with a connection to the crew.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Utas_Past_Arc.png"},
+
+    //Egghead
+    {id: 57, saga: "The New World Saga", arcName: "Egghead Arc", epsRange: "1086-1155", totalEps: 70, description: "The crew arrives at Egghead, a mysterious island where they encounter new challenges and adventures.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Egghead_Arc.png"},
+    {id: 58, saga: "The New World Saga", arcName: "Elbaph Arc", epsRange: "1156-TBA", totalEps: 0, description: "The crew sets sail for Elbaph, a legendary island inhabited by giants, where they face new challenges and adventures.", imageUrl: "https://upload.wikimedia.org/wikipedia/en/6/6f/One_Piece_Elbaph_Arc.png"},
+
+];
