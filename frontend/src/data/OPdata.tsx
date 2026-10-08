@@ -1,4 +1,4 @@
-import {type OPdtoTypes } from "../dto/OPdtoTypes";
+import { type OPdtoTypes } from "../dto/OPdtoTypes";
 
 export const OPdata: OPdtoTypes[] = [
     //Rookie Saga
