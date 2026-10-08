@@ -1,21 +1,58 @@
-interface SearchInputProps {
-  searchTerm: string;
-  onSearchChange: (value: string) => void;
-}
+import React, { useState } from "react";
+import { OPdata } from "../data/OPdata";
+import SearchInput from "./OPsearchInput";
+import SagaFilter from "./OPfilter";
+import ArcList from "./OPArcList";
+import { type OPdtoTypes } from "../dto/OPdtoTypes";
 
-export default function SearchInput({ searchTerm, onSearchChange }: SearchInputProps) {
+export default function OnePieceSearch() {
+  const [searchTerm, setSearchTerm] = useState<string>("");
+  const [selectedSaga, setSelectedSaga] = useState<string>("All");
+
+  // Daftar unik saga untuk opsi dropdown
+  const sagas = ["All", ...Array.from(new Set(OPdata.map((arc) => arc.saga)))];
+
+  // Logika Filter
+  const filteredArcs = OPdata.filter((arc: OPdtoTypes) => {
+    const matchesSearch = 
+      arc.arcName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      arc.epsRange.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      arc.description.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesSaga = selectedSaga === "All" || arc.saga === selectedSaga;
+
+    return matchesSearch && matchesSaga;
+  });
+
+  const handleReset = () => {
+    setSearchTerm("");
+    setSelectedSaga("All");
+  };
+
   return (
-    <div className="relative flex-1">
-      <input
-        type="text"
-        placeholder="Cari arc (contoh: Alabasta, Wano, Ep 1-3)..."
-        value={searchTerm}
-        onChange={(e) => onSearchChange(e.target.value)}
-        className="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 pl-11 text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-400 transition shadow-inner"
-      />
-      <svg className="w-5 h-5 text-slate-500 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-      </svg>
+    <div className="min-h-screen bg-slate-900 text-slate-100 p-6 md:p-10 font-sans">
+      <div className="max-w-4xl mx-auto">
+        
+        {/* Header */}
+        <header className="mb-8 text-center">
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-wider text-amber-400">
+            ONE PIECE ARC & EPISODE FINDER
+          </h1>
+          <p className="text-slate-400 text-sm mt-2">
+            Cari arc petualangan Topi Jerami berdasarkan judul, nomor episode, atau saga!
+          </p>
+        </header>
+
+        {/* Action Controls (Search & Filter) */}
+        <div className="flex flex-col md:flex-row gap-4 mb-8">
+          <SearchInput searchTerm={searchTerm} onSearchChange={setSearchTerm} />
+          <SagaFilter sagas={sagas} selectedSaga={selectedSaga} onSagaChange={setSelectedSaga} />
+        </div>
+
+        {/* Display List / Results */}
+        <ArcList arcs={filteredArcs} onReset={handleReset} />
+
+      </div>
     </div>
   );
 }
