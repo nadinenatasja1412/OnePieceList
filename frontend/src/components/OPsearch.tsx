@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { OPdata } from "../data/OPdata";
 import SearchInput from "./OPsearchInput";
 import SagaFilter from "./OPSagaFilter";

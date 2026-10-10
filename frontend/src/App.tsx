@@ -1,11 +1,10 @@
 import OPSearch from "./components/OPsearch";
 
-
-export function App() {
+function App() {
   return (
-    <div className="App">
-      <OPSearch></OPSearch>
-    </div>
+    <main className="bg-slate-900 min-h-screen">
+      <OPSearch />
+    </main>
   );
 }
 

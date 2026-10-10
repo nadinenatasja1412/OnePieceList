@@ -6,4 +6,11 @@ export interface OPdtoTypes {
   totalEps: number|string;
   description: string;
   imageUrl: string;
+  Episodes: Episode[];
+}
+
+export interface Episode {
+  episodeNumber: number;
+  title: string;
+  synopsis: string;
 }
